@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sell Your Vehicle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="seller.css" rel="stylesheet">
+</head>
+<body>
+
+<form>
+    <div class="main">
+
+        <h2>Sell Your Vehicle</h2>
+
+        <!--Vehicle Info -->
+        <div class="info">
+            <h3>Vehicle Details</h3><label for="title">Add Title of your vehicles</label>
+            <input type="text" id="title" name="title" placeholder=" eg.brabus wildstar700 and G-wagon" required>
+            <!--  vehicles type-->
+
+            <div class="row">
+                <div>
+                    <label for="make">select your vehicles:</label>
+                    <select id="make" name="make" required>
+                        <option value="Honda">Honda</option>
+                        <option>Toyota Toyota Hilux a 4X4</option>
+                        <option>Ford</option>
+                        <option>BYD</option>
+                        <option>scorpio</option>
+                    </select>
+                </div>
+                <!-- vehicles model -->
+                <div>
+                    <label for="model">Model:</label>
+                    <input type="text" id="model" name="model" placeholder="e.g. Civic" required>
+                </div>
+            </div>
+            <!-- years -->
+
+            <div class="row">
+                <div>
+                    <label for="year">Year:</label>
+                    <input type="number" id="year" name="year" min="2015" max="2024" required>
+                </div>
+                <!-- price -->
+                <div>
+                    <label for="price">Asking Price:</label>
+                    <input type="number" id="price" name="price" min="200000" step="2000000" required>
+                </div>
+            </div>
+            <!-- mileage -->
+
+            <label for="mileage">Mileage:</label>
+            <input type="number" id="mileage" name="mileage" min="0" placeholder="45000" required>
+            <!-- fuel type -->
+             <label for="fuel">Fuel Type:</label>
+            <select id="fuel" name="fueltype" required>
+                <option value="petrol">petrol</option>
+                <option>Diesel</option>
+                <option>Hybrid</option>
+                <option>Electric</option>
+            </select>
+            <!-- transmission -->
+
+            <label for="manual">Transmission:</label>
+            <select id="manual" name="manual " required>
+                <option value="manual">manual</option>
+                <option>Automatic</option>
+                <option>CVT</option>
+                <option>Dual-clutch</option>
+            </select>
+        </div>
+
+        <!-- Photos -->
+        <div class="section">
+            <h3>Upload Photos (post minimum 5 photos)</h3>
+            <div class="photo-box">
+                <label for="photos">Click to browse or drag images here
+                <input type="file" id="photos" name="photos[]" accept="image/*" min="5" multiple>
+
+
+
+                </label>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="section">
+            <h3>Description</h3>
+
+            <textarea name="description" placeholder="About  the vehicle'scondition, service history, modifications,">
+                
+            </textarea>
+        </div>
+
+        <!-- Seller info -->
+        <div class="section">
+            <h3>Seller Information:</h3>
+             <div class="row">
+                <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="seller_name" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="sellerphone" required>
+                </div>
+            </div>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="seller_email" required>
+
+            <label for="location">City,area </label>
+            <input type="text" id="location" name="sellerlocation" placeholder="eg.pepsicola" required>
+        </div>
+<br>
+        <!-- Agreement -->
+        <div class="lastone">
+            <label>
+                <input type="checkbox" name="agree" required>
+                I agree to the <a href="/terms" target="_blank">Terms of Service</a> and <a href="/privacy" target="_blank">Privacy Policy</a>.
+            </label>
+        </div>
+        <br>
+        <button type="submit" class="button">Post Listing</button>
+
+    </div>
+</form>
+
+</body>
+</html>
