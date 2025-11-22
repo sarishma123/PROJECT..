@@ -7,7 +7,7 @@
 
     body {
       font-family: Arial, sans-serif;
-      background-color: rgb(232, 231, 228); /* Very light orange background */
+      background-color: rgb(232, 231, 228); 
     }
 
     /* Header & Navigation */
@@ -17,48 +17,31 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: rgb(218, 214, 214);
-      gap:40px
+      color: rgb(213, 199, 199);
+      gap:40px;
+    }
+    header h1 span
+    {
+      color:black;
     }
 
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 50px;
-      margin-right: 10px;
-      width: 50px;
-      border-radius: 50px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        border: 2px solid #ff6b35;
-
-    }
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: sticky;
-      gap:30px;
-
-    }
+     
 
     nav a {
-      align-items: center;
       color: white;
       text-decoration: none;
       margin-right: 20px;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: color 0.3s, border 0.3s;
       border-radius: 6px;
-
-
+      padding: 8px 12px;
     }
 
     nav a:hover {
       color: black;
+      border: 1px solid white;
     }
+    /* main section */
 
     .content {
       max-width: 1000px;
@@ -81,9 +64,9 @@
     .contact-form {
       flex: 1;
       min-width: 300px;
-        background: #fff5e6; /* Light orange background */
+        background: #fff5e6; 
         border-radius: 10px;
-        box-shadow: 0 2px 16px orange;
+        box-shadow: 0 2px 16px #ff6b35;
         padding: 20px;
         margin-bottom: 20px;
         border: 1px solid #ff6b35; /* Peach border */
@@ -111,13 +94,13 @@
       height: 30px;
       transition: transform 0.3s, box-shadow 0.3s;
       border-radius: 50%;
-      border: 2px solid orange;
+      border: 2px solid #ff6b35;
     }
 
     .social-icons img:hover {
       transform: scale(1.1);
-      box-shadow: 0 0 8px orange;
-      border-color: #ff8c00; /* Darker orange on hover */
+      box-shadow: 0 0 8px #ff6b35;
+      border-color: #ff6b35; 
     }
 
     .form-group {
@@ -166,9 +149,9 @@
     }
 
     button[type="submit"]:hover {
-      background-color: #ff6b35;
+      background-color: orangered;
       transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(206, 202, 196, 0.3);
+      box-shadow: 0 4px 8px rgba(38, 36, 34, 0.3);
     }
     @media (max-width: 1024px) and (min-width: 400px) {
   header {
@@ -176,12 +159,6 @@
     align-items: flex-start;
     gap: 10px;
     padding: 10px 8px;
-  }
-
-  .logo img {
-    height: 40px;
-    width: 40px;
-    margin-right: 6px;
   }
 
   nav {
@@ -210,7 +187,7 @@
 
    
     footer {
-      background-color: #ff6b35; /* Darker shade of orange */
+      background-color: #ff6b35; 
       text-align: center;
       padding: 20px;
       color: white;
@@ -218,7 +195,6 @@
       width: 100%;
       font-size: 16px;
       font-weight: bold;
-      border-top: 2px solid #ff6b35;
       margin-top: 40px;
       box-shadow: 0 -2px 10px rgb(53, 41, 41)
     }
